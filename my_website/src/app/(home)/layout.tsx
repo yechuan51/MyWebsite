@@ -1,17 +1,23 @@
 import "styles/global.css";
+import styles from "./layout.module.css";
 import { NextPage } from "next";
-import React, { Fragment } from "react";
-import NavBarComp from "@/components/main_nav_bar/navBar";
+import React from "react";
+import NavBarComp, { NavBarItemType } from "@/components/main_nav_bar/navBar";
 
 type LayoutPropsType = {
   children: React.ReactNode;
 };
 
 const Layout: NextPage<LayoutPropsType> = (props) => {
+  const navBarItems: NavBarItemType[] = [
+    { displayText: "Blog", href: "/blogs" },
+    { displayText: "About", href: "/about" },
+  ];
+
   return (
-    <div>
+    <div className={styles.container}>
       <header>
-        <NavBarComp />
+        <NavBarComp items={navBarItems} />
       </header>
       {props.children}
     </div>
