@@ -6,10 +6,12 @@ import styles from "./navBar.module.css";
 const NavBarComp: NextPage = () => {
   return (
     <nav className={styles.container}>
-      <p className={styles.title}>My website</p>
+      <p className={styles.title}>
+        <Link href="/">My website</Link>
+      </p>
       <ul className={styles.navItemsList}>
         <li>
-          <Link href="https://google.com">Just a link to Google</Link>
+          <Link href="/blogs">Blogs</Link>
         </li>
         <li>
           <Link href="https://twitter.com">Link to Twitter</Link>
