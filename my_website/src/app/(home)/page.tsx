@@ -8,13 +8,12 @@ const getCurrentDate = () => {
 
 const MainHomePage: NextPage = () => {
   const currentDate = getCurrentDate().toLocaleDateString();
-
   return (
-    <div>
-      <main>
-        <p>Today's date is {currentDate}</p>
-      </main>
-    </div>
+      <div>
+        <main>
+          <p>Today's date is {currentDate}</p>
+        </main>
+      </div>
   );
 };
 

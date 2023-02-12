@@ -11,12 +11,7 @@ const RootLayout: NextPage<RootLayoutPropsType> = ({ children }) => {
   return (
     <html lang="en">
       <head />
-      <body>
-        <header>
-          <NavBarComp />
-        </header>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 };
