@@ -21,13 +21,13 @@ jobs:
           check-latest: true
 
       - name: Install dependencies
+        working-directory: ./my_website
         run: |
-          cd ./my_website
           pwd
           npm install
 
       - name: Build and test the app
+        working-directory: ./my_website
         run: |
-          cd ./my_website
           npm run build
           npm test
