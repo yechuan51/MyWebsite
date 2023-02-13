@@ -10,8 +10,8 @@ type LayoutPropsType = {
 
 const Layout: NextPage<LayoutPropsType> = (props) => {
   const navBarItems: NavBarItemType[] = [
-    { displayText: "Blog", href: "/blogs" },
-    { displayText: "About", href: "/about" },
+    { key: "blog", displayText: "Blog", href: "/blogs" },
+    { key: "about", displayText: "About", href: "/about" },
   ];
 
   return (
