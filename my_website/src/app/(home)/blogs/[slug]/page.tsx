@@ -1,6 +1,4 @@
-import {NextPage} from "next";
-
-const BlogPage: NextPage = () => {
+const BlogPage: () => JSX.Element = () => {
   return <p>Blog page WIP.</p>;
 };
 

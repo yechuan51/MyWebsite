@@ -1,6 +1,4 @@
-import {NextPage} from "next";
-
-const BlogsHomePage: NextPage = () => {
+const BlogsHomePage: () => JSX.Element = () => {
   return <p>Blogs page WIP. Should show a list of blogs.</p>;
 };
 
