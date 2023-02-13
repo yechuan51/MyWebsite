@@ -1,0 +1,32 @@
+name: Next.js CI
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          check-latest: true
+
+      - name: Install dependencies
+        run: |
+          cd ./my_website
+          pwd
+          npm install
+
+      - name: Build and test the app
+        run: |
+          cd ./my_website
+          npm run build
+          npm test
