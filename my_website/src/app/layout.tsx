@@ -1,12 +1,12 @@
 import "styles/global.css";
 import React from "react";
-import { NextPage } from "next";
 
 type RootLayoutPropsType = {
   children: React.ReactNode;
 };
 
-const RootLayout: NextPage<RootLayoutPropsType> = ({ children }) => {
+
+const RootLayout = ({ children }: RootLayoutPropsType) => {
   return (
     <html lang="en">
       <head />

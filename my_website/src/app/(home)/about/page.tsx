@@ -1,6 +1,7 @@
-import {getAboutPageMarkdown} from "@/lib/fs/fs";
+import { getAboutPageMarkdown } from "@/lib/fs/fs";
+import MarkdownContent from "@/components/markdown/markdownContent";
 
-const ABOUT_PAGE_PATH = ["public", "content", "about", "about.md"]
+const ABOUT_PAGE_PATH = ["public", "content", "about", "about.md"];
 
 const AboutPage = async () => {
   const data = await getAboutPageMarkdown(ABOUT_PAGE_PATH);
@@ -11,7 +12,7 @@ const AboutPage = async () => {
 
   return (
     <main>
-      <p>{content}</p>
+      <MarkdownContent content={content} />
     </main>
   );
 };

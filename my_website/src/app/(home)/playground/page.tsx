@@ -1,7 +1,6 @@
-import { NextPage } from "next";
 import styles from "./page.module.css";
 
-const PlaygroundPage: NextPage = () => {
+const PlaygroundPage: () => JSX.Element = () => {
   return (
     <button className={styles.dropdownButton}>
       Hover me
