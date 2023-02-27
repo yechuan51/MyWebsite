@@ -23,7 +23,6 @@ jobs:
       - name: Install dependencies
         working-directory: ./my_website
         run: |
-          pwd
           npm install
 
       - name: Build and test the app

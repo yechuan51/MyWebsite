@@ -13,12 +13,16 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 16
+        check-latest: true
     - name: Install dependencies
       working-directory: ./my_website
-      run: npm run build
+      run: npm install
     - name: Install Playwright Browsers
       working-directory: ./my_website
       run: npx playwright install --with-deps
+    - name: Build Next Server
+      working-directory: ./my_website
+      run: npm run build
     - name: Run Playwright tests
       working-directory: ./my_website
       run: npx playwright test
