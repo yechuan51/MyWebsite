@@ -10,6 +10,7 @@ exports[`render unchanged 1`] = `
     >
       <a
         href="/"
+        title="Logo"
       >
         My website
       </a>

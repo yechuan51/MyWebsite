@@ -17,7 +17,7 @@ const NavBarComp: NextPage<NavBarCompPropsType> = (props) => {
   return (
     <nav className={styles.container}>
       <p className={styles.title}>
-        <Link href="/">My website</Link>
+        <Link href="/" title="Logo">My website</Link>
       </p>
       <ul className={styles.navItemsList}>
         {items.map((item) => (
