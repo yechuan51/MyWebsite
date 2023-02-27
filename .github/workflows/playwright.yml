@@ -15,7 +15,7 @@ jobs:
         node-version: 16
     - name: Install dependencies
       working-directory: ./my_website
-      run: npm ci
+      run: npm build
     - name: Install Playwright Browsers
       working-directory: ./my_website
       run: npx playwright install --with-deps
